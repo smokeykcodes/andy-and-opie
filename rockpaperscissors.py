@@ -4,7 +4,10 @@ def get_choices():
     options = ["rock", "paper", "scissors"]
     player_choice = input ("Enter a choice (rock, paper, or scissors): ")
     computer_choice = random.choices (options)
-    choices = {"player" : player_choice, "computer" : computer_choice}
+    #Look here...
+    computer_choice2 = str(computer_choice[0])
+    choices = {"player" : player_choice, "computer" : computer_choice2}
+    
     return choices
 
 def check_win(player, computer):
