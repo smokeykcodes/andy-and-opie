@@ -5,6 +5,7 @@ def get_choices():
     player_choice = input ("Enter a choice (rock, paper, or scissors): ")
     computer_choice = random.choices (options)
     choices = {"player" : player_choice, "computer" : computer_choice}
+    print(f'{choices} - I am in get_choices')
     return choices
 
 def check_win(player, computer):
